@@ -5,7 +5,7 @@ st.title("Portfolio Saya")
 st.header("Data Scientist")
 st.sidebar.title("Navigasi")
 page = st.sidebar.radio("Pilih Halaman",
-                        ["Tentang Saya", "Project_1", "Project_2", "Kontak"])
+                        ["Tentang Saya", "Project_1", "Project_2", "Machine Learning", "Kontak"])
 
 
 if page == 'Kontak' :
@@ -20,4 +20,7 @@ elif page == 'Project_1' :
 elif page == 'Project_2' : 
     import projectdua
     projectdua.project2()
+elif page == 'Machine Learning' : 
+    import prediksi
+    prediksi.prediksi()
 
